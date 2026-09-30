@@ -116,6 +116,29 @@
 
         <article class="project-card">
           <div class="project-top">
+            <h3>Loan Portfolio — Vintage &amp; Credit Risk</h3>
+            <span class="project-tag">SQL · DuckDB · Python</span>
+          </div>
+          <p>
+            Credit-risk analysis of a fintech's short-term loan book — 71,478
+            loans and 46.5M lent to 10,276 clients, followed repayment by
+            repayment. The first finding was in the data itself: it holds one
+            row per payment, and summing loan amounts straight from it
+            overstates lending 3x. After rebuilding it at the right grain, the
+            vintages show why losses fell — and where the next risk sits.
+          </p>
+          <ul class="project-stats">
+            <li><strong>14.7% → 2.2%</strong> loss rate across vintages as loan size grew ~9x</li>
+            <li>first loans lose ~15%; a client's 6th+ loan ~3–4% — selection, not better underwriting</li>
+            <li>4–6 instalment loans lose ~6x more than shorter loans of the same size</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/kojosafo86/fintex-loan-portfolio-analysis" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
             <h3>NHS GP Appointments — DNA &amp; Capacity</h3>
             <span class="project-tag">Power BI · DAX</span>
           </div>
