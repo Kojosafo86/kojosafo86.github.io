@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DataWize Analytics — Kojo Safo</title>
-<meta name="description" content="Kojo Safo — BI & Data Analyst. Finance-trained analytics work: SQL, Power BI, Python. Real datasets, honest findings.">
+<title>Kojo Safo — BI &amp; Data Analyst | DataWize Analytics</title>
+<meta name="description" content="Kojo Safo — BI & Data Analyst, finance-trained. Power BI, SQL, Python; spend and procurement analytics. Real datasets, honest findings. Open to BI, Data and FP&A roles in London or remote.">
+<meta property="og:title" content="Kojo Safo — BI & Data Analyst, finance-trained">
+<meta property="og:description" content="Power BI, SQL and Python work on real datasets: UK government spend, NHS appointments, A/B testing. Open to BI, Data and FP&A roles.">
+<meta property="og:url" content="https://kojosafo86.github.io/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0f14'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='%2332d9c9' font-family='monospace'>D</text></svg>">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -39,9 +42,9 @@
       </p>
       <div class="status-row">
         <span class="status-badge">
-          <span class="status-dot"></span> Open to BI / Data Analyst roles
+          <span class="status-dot"></span> Open to BI, Data &amp; FP&amp;A roles
         </span>
-        <span class="status-note">No UK sponsorship required</span>
+        <span class="status-note">Permanent or contract · London or remote · No UK sponsorship required</span>
       </div>
       <div class="hero-links">
         <a class="btn btn-primary" href="mailto:kojosafo86@gmail.com">Get in touch</a>
@@ -55,27 +58,27 @@
     <div class="wrap metrics-grid">
       <div class="metric" data-target="1.5" data-decimals="1" data-prefix="€" data-suffix="m">
         <div class="metric-value"><span class="count">0</span></div>
-        <div class="metric-label">cost savings delivered at Eisai Europe</div>
+        <div class="metric-label">cost savings target supported through spend &amp; supplier analysis, Eisai Europe</div>
       </div>
       <div class="metric" data-target="50" data-suffix="%">
         <div class="metric-value"><span class="count">0</span></div>
-        <div class="metric-label">reduction in reporting time, Eisai Europe</div>
-      </div>
-      <div class="metric" data-target="157701" data-suffix="">
-        <div class="metric-value"><span class="count">0</span></div>
-        <div class="metric-label">gov. transactions queried in Spend Ledger</div>
-      </div>
-      <div class="metric" data-target="743" data-suffix="M">
-        <div class="metric-value"><span class="count">0</span></div>
-        <div class="metric-label">NHS appointments modelled in Power BI</div>
-      </div>
-      <div class="metric" data-target="294478" data-suffix="">
-        <div class="metric-value"><span class="count">0</span></div>
-        <div class="metric-label">users in A/B test — result: do not ship</div>
+        <div class="metric-label">less time preparing supplier reports after automation, Eisai Europe</div>
       </div>
       <div class="metric" data-target="10000" data-suffix="+">
         <div class="metric-value"><span class="count">0</span></div>
-        <div class="metric-label">duplicate supplier records remediated, SAP Ariba</div>
+        <div class="metric-label">duplicate supplier accounts identified &amp; cleansed, SAP Ariba</div>
+      </div>
+      <div class="metric" data-target="6" data-suffix=" wks">
+        <div class="metric-value"><span class="count">0</span></div>
+        <div class="metric-label">average supplier onboarding, down from 3+ months, Eisai Europe</div>
+      </div>
+      <div class="metric" data-target="66.9" data-decimals="1" data-prefix="£" data-suffix="bn">
+        <div class="metric-value"><span class="count">0</span></div>
+        <div class="metric-label">UK government supplier spend reconciled into one schema, Spend Ledger</div>
+      </div>
+      <div class="metric" data-target="31" data-suffix="M">
+        <div class="metric-value"><span class="count">0</span></div>
+        <div class="metric-label">GP appointment slots lost to no-shows, quantified in Power BI</div>
       </div>
     </div>
   </section>
@@ -89,27 +92,25 @@
 
         <article class="project-card">
           <div class="project-top">
-            <h3>Reseller Profitability Analysis</h3>
-            <span class="project-tag">SQL · Power BI · Full-stack</span>
+            <h3>Spend Ledger — UK Government Supplier Spend</h3>
+            <span class="project-tag">SQL · Python · DuckDB · LLM</span>
           </div>
           <p>
-            A SQL profitability analysis and Power BI star schema built on data
-            from my own reseller business — sourced via <strong>Car Boot
-            Lister</strong>, an AI-assisted app I built end-to-end that drafts
-            eBay listings from phone photos and syncs them through eBay's Sell
-            API. Includes a written case study of the engineering: a live
-            image-host outage diagnosed and fixed, a self-healing sync bug, and
-            a structured-data bug that was silently mislabelling every listing's
-            brand and model.
+            Spend analytics on £66.9bn of UK government supplier payments — the
+            same kind of spend and supplier data I reported on at Eisai, at
+            public scale. I reconciled three departments' inconsistent CSV
+            exports (different column names, encodings, dates stored as Excel
+            serial numbers) into one clean schema, then built a plain-English
+            query layer: ask a question, get back validated SQL, a table and a
+            chart — with the query always shown, never a black box.
           </p>
           <ul class="project-stats">
-            <li><strong>32</strong> items catalogued end-to-end</li>
-            <li>margin-tier &amp; sell-through SQL, CASE-statement logic</li>
-            <li>scoped honestly — 2 live listings so far, stated plainly</li>
+            <li><strong>157,701</strong> transactions across DfT, DESNZ and DWP</li>
+            <li>top payee Network Rail at £10.3bn — much "spend" is inter-agency transfer, not external suppliers</li>
+            <li>read-only, self-correcting text-to-SQL guardrails</li>
           </ul>
           <div class="project-links">
-            <a href="https://github.com/kojosafo86/carboot-lister/tree/master/analytics" target="_blank" rel="noopener">Analysis on GitHub ↗</a>
-            <a href="https://github.com/kojosafo86/carboot-lister/blob/master/docs/case-study.md" target="_blank" rel="noopener">Engineering case study ↗</a>
+            <a href="https://github.com/kojosafo86/spend-ledger" target="_blank" rel="noopener">View on GitHub ↗</a>
           </div>
         </article>
 
@@ -121,15 +122,16 @@
           <p>
             A Power BI dashboard treating GP no-shows as a capacity problem
             rather than a statistic: a star schema, custom DAX measures, and a
-            three-page build on NHS England's published appointments data.
+            three-page build on NHS England's published appointments data
+            (743M appointments, Jan 2020 – Jun 2022).
           </p>
           <ul class="project-stats">
-            <li><strong>31M</strong> slots lost to no-shows (4.4% DNA rate)</li>
-            <li>DNA rate rises ~6x with booking wait — clean, monotonic driver</li>
+            <li><strong>31M</strong> slots lost to no-shows — about 7.1M clinician hours</li>
+            <li>DNA rate rises ~6x with booking wait (1.8% same-day → 10.8% at 28+ days)</li>
             <li>custom NHS-branded theme, star schema, SUMX/RELATED time estimates</li>
           </ul>
           <div class="project-links">
-            <a href="https://github.com/Kojosafo86/nhs-gp-dashboard" target="_blank" rel="noopener">View on GitHub ↗</a>
+            <a href="https://github.com/kojosafo86/nhs-gp-dashboard" target="_blank" rel="noopener">View on GitHub ↗</a>
           </div>
         </article>
 
@@ -150,29 +152,32 @@
             <li>peeking simulation showing false-positive inflation from early stopping</li>
           </ul>
           <div class="project-links">
-            <a href="https://github.com/Kojosafo86/ab-testing-conversion" target="_blank" rel="noopener">View on GitHub ↗</a>
+            <a href="https://github.com/kojosafo86/ab-testing-conversion" target="_blank" rel="noopener">View on GitHub ↗</a>
           </div>
         </article>
 
         <article class="project-card">
           <div class="project-top">
-            <h3>Spend Ledger — Chat With Your Spend Data</h3>
-            <span class="project-tag">Python · DuckDB · LLM</span>
+            <h3>Car Boot Lister — Automation &amp; Reseller Analytics</h3>
+            <span class="project-tag">Node.js · Claude API · SQL · Power BI</span>
           </div>
           <p>
-            A natural-language analytics tool over £66.9bn of UK government
-            spending: ask a question in plain English, get back validated SQL,
-            a table, and a chart — with the query always shown, never a black
-            box. Reconciles three departments' inconsistent CSV exports into
-            one clean schema.
+            An AI-assisted app I built end-to-end for my own reseller business:
+            it drafts eBay listings from phone photos and syncs them through
+            eBay's Sell API, logging every item for analysis. On top of that
+            data sits a SQL profitability analysis and a Power BI star schema.
+            The case study covers the engineering — a live image-host outage
+            diagnosed and fixed, a self-healing sync bug, and a structured-data
+            bug that was silently mislabelling every listing's brand and model.
           </p>
           <ul class="project-stats">
-            <li><strong>157,701</strong> transactions across 3 departments</li>
-            <li>read-only, self-correcting text-to-SQL guardrails</li>
-            <li>diagnosed a silent Arrow-dtype bug that was collapsing a chart series</li>
+            <li><strong>32</strong> items catalogued end-to-end, photo to listing</li>
+            <li>margin-tier &amp; sell-through SQL, CASE-statement logic</li>
+            <li>scoped honestly — an early dataset, stated plainly</li>
           </ul>
           <div class="project-links">
-            <a href="https://github.com/Kojosafo86/spend-ledger" target="_blank" rel="noopener">View on GitHub ↗</a>
+            <a href="https://github.com/kojosafo86/reseller-profitability-analysis" target="_blank" rel="noopener">Analysis on GitHub ↗</a>
+            <a href="https://github.com/kojosafo86/reseller-profitability-analysis/blob/main/case-study.md" target="_blank" rel="noopener">Engineering case study ↗</a>
           </div>
         </article>
 
@@ -192,11 +197,13 @@
         </p>
         <p>
           At Eisai I joined with no SAP experience, learned it on the job, and
-          became a super user — running training and remediating over 10,000
-          duplicate supplier accounts in SAP Ariba as part of a project that
-          delivered roughly €1.5m in cost savings and halved reporting time.
-          Before that, I supervised treasury operations at Fidelity Bank Ghana
-          and hold a Ghana Stock Exchange ADO (authorised dealing officer)
+          became a super user — running training across EMEA and identifying
+          and cleansing over 10,000 duplicate supplier accounts in SAP Ariba,
+          work that supported a €1.5m cost savings target. Automating the
+          weekly supplier reporting cut preparation time by around 50%.
+          Earlier, I spent six years at Fidelity Bank Ghana across treasury
+          operations, credit analysis and management information, and I hold
+          a Ghana Stock Exchange ADO (authorised dealing officer)
           qualification.
         </p>
         <p>

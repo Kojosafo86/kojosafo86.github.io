@@ -48,13 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.4 });
 
   metrics.forEach((el) => observer.observe(el));
-
-  // LinkedIn placeholder: until a real URL is set, clicking it explains
-  // rather than 404s.
-  document.querySelectorAll('[data-linkedin-placeholder]').forEach((el) => {
-    el.addEventListener('click', (e) => {
-      e.preventDefault();
-      alert('Add your LinkedIn profile URL in index.html — search for data-linkedin-placeholder.');
-    });
-  });
 });
