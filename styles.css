@@ -207,6 +207,63 @@ p { margin: 0 0 14px; color: var(--text); }
 .project-stats strong { color: var(--text); font-family: var(--mono); }
 .project-links { margin-top: auto; display: flex; flex-direction: column; gap: 6px; font-size: 0.88rem; }
 
+.project-shot {
+  display: block;
+  margin: -26px -26px 20px;
+  border-bottom: 1px solid var(--border);
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  background: #fff;
+  aspect-ratio: 16 / 9;
+}
+.project-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.project-shot:hover img { transform: scale(1.02); }
+
+.project-card--wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  align-items: start;
+}
+.project-card--wide .project-shot {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* Experience */
+.experience { padding: 0 0 88px; }
+.timeline { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--border); }
+.timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 20px;
+  padding: 0 0 28px 24px;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.tl-when { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); padding-top: 3px; }
+.tl-body h3 { font-size: 1.02rem; margin-bottom: 6px; }
+.tl-body h3 span { display: block; font-weight: 400; color: var(--text-dim); font-size: 0.86rem; margin-top: 3px; }
+.tl-body p { color: var(--text-dim); font-size: 0.92rem; margin: 0; }
+
 /* About */
 .about-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; }
 .about p { color: var(--text-dim); }
@@ -233,7 +290,10 @@ p { margin: 0 0 14px; color: var(--text); }
   .nav { display: none; }
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
   .project-grid { grid-template-columns: 1fr; }
-  .about-grid { grid-template-columns: 1fr; }
+  .project-card--wide { grid-template-columns: 1fr; }
+  .project-card--wide .project-shot { margin: -26px -26px 0; border: 0; border-bottom: 1px solid var(--border); border-radius: 12px 12px 0 0; }
+  .timeline li { grid-template-columns: 1fr; gap: 4px; }  .about-grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; }
   .footer-links { align-items: flex-start; }
 }
+.project-shot--dark { background: #111; }
